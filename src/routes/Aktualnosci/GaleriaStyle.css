@@ -1,0 +1,120 @@
+.galeria {
+  text-align: center;
+}
+.galeria h1 {
+  font-size: 54px;
+  font-style: italic;
+  padding-top: 50px;
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding-top: 20px;
+  clear: both;
+}
+
+.pics {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: 360px;
+  margin: 10px;
+  cursor: pointer;
+  clear: both;
+}
+
+.pics img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: solid 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  clear: both;
+}
+.pics:hover img {
+  transform: scale(1.05);
+}
+.containerFolder {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  cursor: pointer;
+}
+.containerFolder img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: solid 4px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+.galleryInfo {
+  margin: 1.3rem 0;
+  display: flex;
+  padding: 0 2px;
+}
+.galleryInfo strong {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: red;
+}
+.galleryTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: 20px;
+  margin: 0.67em 0;
+  word-wrap: break-word;
+  width: auto;
+}
+.galleryMore {
+  display: flex;
+  font-size: 31px;
+  letter-spacing: 0;
+}
+.spanMore {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.9;
+  white-space: nowrap;
+  text-transform: uppercase;
+  color: #0d142c;
+  border-bottom: red 2px solid;
+  padding: 0 2px;
+  z-index: 1;
+  transition: color 0.5s;
+}
+
+.pics:hover .spanMore {
+  background: red;
+  color: white;
+  transition: color 0.3s;
+}
+
+/* Media queries dla responsywności */
+@media (max-width: 1200px) {
+  .container {
+    justify-content: center;
+  }
+
+  .pics {
+    flex: 0 0 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+  }
+
+  .pics {
+    flex: 0 0 100%;
+  }
+}

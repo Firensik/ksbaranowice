@@ -1,0 +1,210 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.headerTop {
+  height: 70px;
+  width: 100%;
+  background-color: #228b22;
+}
+.headerElements {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+.navbarWrapper {
+  width: 100%;
+  height: 60px;
+  background-color: #006400;
+}
+.navbarItems {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding: 0 20px;
+}
+.navLinks {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  max-width: 1200px;
+}
+.navLink {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-evenly;
+}
+span {
+  color: #fff;
+  font-size: 2.2rem;
+  padding: 0 25px;
+  margin: 0 1.5rem;
+}
+.social {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
+.fa-brands {
+  font-size: 30px;
+  margin-right: 2rem;
+  color: #fff;
+}
+.fa-brands:hover {
+  color: rgb(253, 253, 58);
+}
+.headerLogo {
+  position: absolute;
+  width: 130px;
+  max-width: 100%;
+  top: 2px;
+  left: 120px;
+  cursor: pointer;
+}
+
+.menuIcons {
+  display: none;
+}
+
+ul {
+  display: block;
+  list-style: none;
+}
+
+.navLink span {
+  font-size: 18px;
+  padding: 0 30px;
+  margin: 0 1.5rem;
+  cursor: pointer;
+}
+ul > .navLink > a {
+  display: flex;
+  height: 60px;
+  align-items: center;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  z-index: 111;
+  cursor: pointer;
+}
+.navLink-child {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 130px;
+  background: #006400;
+  display: none;
+  z-index: 111;
+}
+
+.navLink-child a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 0.8rem 20px;
+  font-size: 14px;
+  text-align: inherit;
+  white-space: nowrap;
+  border: 0;
+  text-decoration: none;
+  color: #fff;
+}
+.navLink span:hover {
+  color: rgb(253, 253, 58);
+}
+.navLink:hover .navLink-child {
+  display: block;
+}
+
+.navLink-child a:hover {
+  background-color: #228b22;
+}
+
+@media (max-width: 1600px) {
+  .headerElements {
+    padding: 15px 5px;
+  }
+  span {
+    color: #fff;
+    font-size: 1.7rem;
+    padding: 0 2rem;
+    margin: 0 0 0 150px;
+  }
+  .headerLogo {
+    width: 130px;
+    max-width: 100%;
+    top: 0;
+    left: 60px;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 1400px) {
+  .headerElements {
+    padding: 15px 20px;
+  }
+  .navLinks {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  span {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0 2.5rem;
+    margin: 0 0 0 200px;
+  }
+  .navLink span {
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 0 1rem;
+    cursor: pointer;
+  }
+  .headerLogo {
+    width: 120px;
+    max-width: 100%;
+    top: 5px;
+    left: 30px;
+    cursor: pointer;
+  }
+}
+@media (max-width: 1024px) {
+  .headerTop {
+    display: none;
+  }
+  .navbarWrapper {
+    position: fixed;
+    display: flex;
+    justify-content: end;
+  }
+  .headerLogo {
+    display: inline-block;
+    width: 60px;
+    max-width: 100%;
+  }
+  .navLink span {
+    display: none;
+  }
+  .menuIcons {
+    display: flex;
+    align-items: end;
+    justify-content: start;
+  }
+}
+
+@media (max-width: 768px) {
+  .navLink span {
+    display: none;
+  }
+}
