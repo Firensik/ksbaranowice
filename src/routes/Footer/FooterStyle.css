@@ -1,0 +1,40 @@
+.containerFooter {
+  margin: 100px auto;
+  border-top: 1px solid black;
+}
+
+.imgUrzad {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 18px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+.imgUrzad img {
+  width: 250px;
+}
+.footerPartnerzy h2 {
+  margin: 20px auto;
+  font-size: 36px;
+  font-style: italic;
+  color: #012201;
+}
+.footerPartnerzy {
+  border-top: 1px solid black;
+}
+.partners {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.partnersKlub {
+  margin: 20px 10px;
+  padding: 30px 20px;
+}
+
+.partners img {
+  width: 132px;
+}

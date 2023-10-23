@@ -5,7 +5,7 @@ import Galeria from "./routes/Aktualnosci/Galeria";
 import GalleryPage from "./routes/Aktualnosci/GalleryPage";
 import Kontakt from "./routes/Klub/Kontakt";
 import Zarzad from "./routes/Klub/Zarzad";
-import Footer from "./routes/Footer";
+import Footer from "./routes/Footer/Footer";
 
 function App() {
   return (

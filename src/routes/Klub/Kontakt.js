@@ -3,7 +3,7 @@ import Header from "../../Components/Header/Header";
 import "./KontaktStyle.css";
 import { BiPhone, BiNavigation } from "react-icons/bi";
 import { HiOutlineMail } from "react-icons/hi";
-import Sponsorzy from "../Footer";
+import Footer from "../Footer/Footer";
 
 const Kontakt = () => {
   return (
@@ -73,7 +73,7 @@ const Kontakt = () => {
             ></iframe>
           </li>
         </ul>
-        <Sponsorzy />
+        <Footer />
       </div>
     </>
   );
