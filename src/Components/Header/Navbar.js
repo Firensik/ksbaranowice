@@ -4,48 +4,59 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [actualy, setAcutaly] = useState(false);
+  const [klub, setKlub] = useState(false);
+  const [team, setTeam] = useState(false);
 
   const handleClick = (e) => {
     e.preventDefault();
   };
+  const url = "https://www.facebook.com/lksbaranowice";
   return (
     <nav className="navbarWrapper">
+      <a href={url}>
+        <i class="fa-brands fa-facebook navbarFb"></i>
+      </a>
+
       <a href="/">
         <img href="/" src={logo} alt="logo" className="headerLogo" />
       </a>
 
       <div className="navbarItems">
         <div className="menuIcons" onClick={() => setToggle(!toggle)}>
-          <i className={toggle ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={toggle ? "fas fa-times" : "fas fa-bars "}></i>
         </div>
-        <ul className="navLinks">
+        <ul className={toggle ? "navLinks --active" : "navLinks"}>
           <li className="navLink">
-            <Link to="/" onClick={handleClick}>
+            <Link to="#" onClick={() => setAcutaly(!actualy)}>
               <span>Aktualności</span>
             </Link>
-            <div className="navLink-child">
-              <Link to="../../routes/Aktualnosci/Wydarzenia.js">
-                Wydarzenia
-              </Link>
+
+            <div
+              className={
+                actualy ? "navLink-child --aktualnosci" : "navLink-child"
+              }
+            >
+              <Link to="/Wydarzenia">Wydarzenia</Link>
               <Link to="/galeria">Galeria</Link>
             </div>
           </li>
           <li className="navLink">
-            <Link to="#" className="klub" onClick={handleClick}>
+            <Link to="#" className="klub" onClick={() => setKlub(!klub)}>
               <span>Klub</span>
             </Link>
-            <div className="navLink-child">
-              <Link to="../../routes/Klub/Historia.js">Historia</Link>
+            <div className={klub ? "navLink-child --klub" : "navLink-child"}>
+              <Link to="/Historia">Historia</Link>
               <Link to="../../routes/Klub/Osiagniecia.js.js">Osiągnięcia</Link>
               <Link to="/Zarzad">Zarząd</Link>
               <Link to="/Kontakt">Kontakt</Link>
             </div>
           </li>
           <li className="navLink">
-            <Link to="#" onClick={handleClick}>
+            <Link to="#" onClick={() => setTeam(!team)}>
               <span>Drużyny</span>
             </Link>
-            <div className="navLink-child">
+            <div className={team ? "navLink-child --druzyny" : "navLink-child"}>
               <Link to="https://www.laczynaspilka.pl/rozgrywki/druzyna/89189d87-b6a5-4066-8876-88841248f97a?tab=tab-mecz&playDictionary=84ccd1dd-c0ed-4531-ac9b-fec402872a1a">
                 Klasa "A"
               </Link>

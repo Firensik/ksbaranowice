@@ -1,0 +1,111 @@
+.homePage {
+  width: 1200px;
+  margin: 30px auto;
+  padding: 0 10px;
+}
+.homePageBox {
+  display: flex;
+  margin: 0 10px;
+}
+.sectionLastGame {
+  width: 450px;
+  margin: 20px 10px;
+}
+
+.sectionBody {
+  margin: 20px 0;
+}
+.sectionHeader h3,
+.scores h3 {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 0;
+}
+
+.sectionBody img {
+  max-height: 450px;
+}
+.scores {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+th {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px;
+}
+td {
+  padding: 8px;
+}
+
+tr td {
+  border-top: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: rgba(33, 36, 35, 0.067);
+}
+.team,
+.pkt {
+  font-weight: bold;
+}
+@media (max-width: 1200px) {
+  .homePageBox {
+    display: block;
+  }
+  .scores {
+    display: block;
+  }
+  .scores h3 {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1025px) {
+  .homePageBox {
+    margin: 80px auto;
+  }
+  .homeBox {
+    max-width: 350px;
+  }
+  .scores {
+    display: block;
+  }
+  .scores h3 {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .sectionHeader h3,
+  .scores h3 {
+    font-size: 22px;
+  }
+  .sectionBody img {
+    max-height: 350px;
+  }
+  .test {
+    display: flex;
+    max-width: 100px;
+  }
+}
+@media (max-width: 567px) {
+  .homePage {
+    margin-top: 0;
+  }
+  .sectionHeader h3,
+  .scores h3 {
+    font-size: 23px;
+  }
+  .sectionHeader h3 {
+    margin-right: 70px;
+  }
+  .sectionBody img {
+    max-height: 250px;
+  }
+  .scores {
+    font-size: 8px;
+  }
+}

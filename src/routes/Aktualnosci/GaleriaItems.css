@@ -1,14 +1,18 @@
 * {
   box-sizing: border-box;
 }
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
 .articlesInfo {
   display: block;
   font-size: 1.4rem;
   color: #0d142c;
   text-transform: uppercase;
   line-height: 21px;
-  margin: 10px auto 10px;
-  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .articlesInfo span {
@@ -41,7 +45,6 @@
   padding: 0 3px;
 
   border-bottom: red 2px solid;
-  z-index: 1;
 }
 
 .floatRight {
@@ -52,4 +55,48 @@
   background: red;
   color: white;
   transition: color 0.3s;
+}
+@media (max-width: 1200px) {
+  .articlesInfo h1 {
+    font-size: 35px;
+    margin: 10px auto;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+}
+@media (max-width: 1024px) {
+  .articlesInfo {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+  .articlesInfo h1 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .articlesInfo h1 {
+    font-size: 25px;
+  }
+  .articlesInfo span {
+    display: block;
+    margin-left: 10px;
+  }
+  .ArticleInfoRight {
+    display: block;
+    margin-right: 200px;
+    position: static;
+  }
+}
+@media (max-width: 567px) {
+  .articlesInfo h1 {
+    font-size: 20px;
+    padding-top: 10px;
+  }
+  .articlesInfo span {
+    display: block;
+  }
+
+  .articlesInfo {
+    margin-top: 0;
+  }
 }

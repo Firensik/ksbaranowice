@@ -52,3 +52,62 @@
   max-height: 100%;
   pointer-events: none;
 }
+
+@media (max-width: 1024px) {
+  .containerKontakt h1 {
+    font-size: 50px;
+    padding-top: 30px;
+    opacity: 1;
+  }
+  .kontakt {
+    margin-top: 20px;
+  }
+  .kontakt h3 {
+    font-size: 28px;
+  }
+  .kontakt p {
+    font-size: 20px;
+  }
+  .kontaktIcon {
+    font-size: 45px;
+  }
+}
+@media (max-width: 768px) {
+  .containerKontakt h1 {
+    font-size: 50px;
+    padding-top: 20px;
+    opacity: 1;
+  }
+  .kontakt {
+    margin-top: 0;
+    display: block;
+  }
+  .kontakt h3 {
+    font-size: 30px;
+  }
+  .kontakt p {
+    font-size: 24px;
+  }
+  .kontaktIcon {
+    font-size: 60px;
+  }
+}
+@media (max-width: 567px) {
+  .containerKontakt h1 {
+    font-size: 40px;
+    padding-top: 20px;
+    opacity: 1;
+  }
+  .kontakt {
+    margin-top: 0;
+  }
+  .kontakt h3 {
+    font-size: 28px;
+  }
+  .kontakt p {
+    font-size: 20px;
+  }
+  .kontaktIcon {
+    font-size: 40px;
+  }
+}

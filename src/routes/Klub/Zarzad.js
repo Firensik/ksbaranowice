@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../Components/Header/Header";
 import { ZarzadItems } from "./ZarzadItems";
+import Footer from "../Footer/Footer";
 import "./ZarzadStyle.css";
 
 const Zarzad = () => {
@@ -18,6 +19,7 @@ const Zarzad = () => {
           ))}
         </ul>
       </div>
+      <Footer />
     </>
   );
 };

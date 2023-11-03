@@ -1,0 +1,98 @@
+.containerHistory {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.containerHistory h1 {
+  font-size: 54px;
+  font-style: italic;
+  padding-top: 50px;
+  opacity: 1;
+}
+.history {
+  display: block;
+  text-align: justify;
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 2em;
+}
+.history span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+.history p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+@media (max-width: 1200px) {
+  .containerHistory h1 {
+    font-size: 60px;
+    padding-top: 80px;
+    opacity: 1;
+  }
+
+  .containerHistory h3 {
+    font-size: 45px;
+  }
+  .history span {
+    font-size: 35px;
+  }
+  .history p {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerHistory h1 {
+    font-size: 60px;
+    padding-top: 80px;
+    opacity: 1;
+  }
+
+  .containerHistory h3 {
+    font-size: 45px;
+  }
+  .history span {
+    font-size: 35px;
+  }
+  .history p {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .containerHistory h1 {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .containerHistory h3 {
+    font-size: 35px;
+  }
+
+  .history span {
+    font-size: 24px;
+  }
+  .history p {
+    font-size: 22px;
+  }
+}
+@media (max-width: 567px) {
+  .containerHistory h1 {
+    font-size: 60px;
+    padding-top: 20px;
+  }
+  .containerHistory h3 {
+    font-size: 35px;
+  }
+
+  .history span {
+    font-size: 24px;
+  }
+  .history p {
+    font-size: 22px;
+  }
+}

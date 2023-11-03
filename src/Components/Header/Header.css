@@ -58,8 +58,12 @@ span {
   margin-right: 2rem;
   color: #fff;
 }
+.navbarFb {
+  display: none;
+}
 .fa-brands:hover {
   color: rgb(253, 253, 58);
+  cursor: pointer;
 }
 .headerLogo {
   position: absolute;
@@ -183,28 +187,99 @@ ul > .navLink > a {
   .headerTop {
     display: none;
   }
-  .navbarWrapper {
-    position: fixed;
+  .navbarFb {
     display: flex;
+    position: absolute;
     justify-content: end;
+    top: 15px;
+    right: 15px;
   }
+
   .headerLogo {
-    display: inline-block;
+    display: block;
     width: 60px;
-    max-width: 100%;
+    top: 0;
   }
   .navLink span {
-    display: none;
+    font-size: 15px;
+    margin: 0;
   }
-  .menuIcons {
-    display: flex;
-    align-items: end;
-    justify-content: start;
+  .navLink-child {
+    top: 60px;
+  }
+
+  .navLink-child a {
+    font-size: 12px;
   }
 }
 
 @media (max-width: 768px) {
+  .navbarFb {
+    position: absolute;
+    font-size: 25px;
+    right: 50%;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+  .menuIcons {
+    position: absolute;
+    z-index: 9999;
+    font-size: 25px;
+    aspect-ratio: 1;
+    top: 15px;
+    right: 40px;
+    display: block;
+    color: #fff;
+  }
+
+  .navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    width: 250px;
+    background-color: #006400;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 50px;
+    padding: 10px;
+
+    transform: translateX(250px);
+    transition: transform 0.3s 0.1s ease-in-out;
+  }
+
+  .navLinks span {
+    border-bottom: 1px solid black;
+  }
+
+  .--active {
+    transform: translateX(0px);
+  }
+}
+@media (max-width: 567px) {
+  .headerLogo {
+    width: 50px;
+  }
+
+  .navLinks {
+    height: 60vh;
+    width: 100%;
+    background-color: #006400;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    padding: 30px;
+    border-top: 1px solid black;
+    transform: translateX(500px);
+    transition: transform 0.3s 0.1s ease-in-out;
+  }
   .navLink span {
-    display: none;
+    font-size: 30px;
+  }
+  .--active {
+    transform: translateX(0px);
   }
 }
